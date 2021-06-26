@@ -12,6 +12,8 @@ public class fibonacci_loop {
 
         System.out.printf("%d%n", 1);
 
+        // for loop glitches when I use i++, quite odd....
+
         for (int i = 0; i < 50; i = i + 1) {
 
             System.out.printf("%d%n", current_number);
