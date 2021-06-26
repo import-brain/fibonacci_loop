@@ -4,25 +4,29 @@ public class fibonacci_loop {
 
         // declaring start of fibonacci numbers
 
-        long preceding_number = 1;
+        long precedingNumber = 1;
 
-        long oldest_preceding_number = 0;
+        long oldestPrecedingNumber = 0;
 
-        long current_number = 1;
+        long currentNumber = 1;
 
         System.out.printf("%d%n", 1);
+
+        // instantiating array
+
+        long[] fibonacciArray = new long[50];
 
         // for loop glitches when I use i++, quite odd....
 
         for (int i = 0; i < 50; i = i + 1) {
 
-            System.out.printf("%d%n", current_number);
+            System.out.printf("%d%n", currentNumber);
 
-            current_number = current_number + preceding_number;
+            currentNumber = currentNumber + precedingNumber;
 
-            oldest_preceding_number = preceding_number;
+            oldestPrecedingNumber = precedingNumber;
 
-            preceding_number = current_number - oldest_preceding_number;
+            precedingNumber = currentNumber - oldestPrecedingNumber;
 
             // math
 
