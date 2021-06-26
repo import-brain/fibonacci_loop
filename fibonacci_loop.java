@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class fibonacci_loop {
 
     public static void main(String[] args) {
@@ -10,17 +12,15 @@ public class fibonacci_loop {
 
         long currentNumber = 1;
 
-        System.out.printf("%d%n", 1);
-
         // instantiating array
 
-        long[] fibonacciArray = new long[50];
+        long[] fibonacciArray = new long[51];
+
+        fibonacciArray[0] = 1;
 
         // for loop glitches when I use i++, quite odd....
 
         for (int i = 0; i < 50; i = i + 1) {
-
-            System.out.printf("%d%n", currentNumber);
 
             currentNumber = currentNumber + precedingNumber;
 
@@ -28,8 +28,11 @@ public class fibonacci_loop {
 
             precedingNumber = currentNumber - oldestPrecedingNumber;
 
+            fibonacciArray[i + 1] = currentNumber;
+
             // math
 
         }
+        System.out.println(Arrays.toString(fibonacciArray));
     }
 }
