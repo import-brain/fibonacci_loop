@@ -18,7 +18,6 @@ public class fibonacci_loop {
 
         fibonacciArray[0] = 1;
 
-        // for loop glitches when I use i++, quite odd....
 
         for (int i = 0; i < 50; i++) {
 
