@@ -20,7 +20,7 @@ public class fibonacci_loop {
 
         // for loop glitches when I use i++, quite odd....
 
-        for (int i = 0; i < 50; i = i + 1) {
+        for (int i = 0; i < 50; i++) {
 
             currentNumber = currentNumber + precedingNumber;
 
