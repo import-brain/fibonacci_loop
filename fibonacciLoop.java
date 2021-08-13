@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
-public class fibonacci_loop {
+// main function for the fibonacci loop class
+
+public class fibonacciLoop {
 
     public static void main(String[] args) {
 
