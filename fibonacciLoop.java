@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 // main function for the fibonacci loop class
 
@@ -14,14 +15,22 @@ public class fibonacciLoop {
 
         long currentNumber = 1;
 
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("How long do you want the fibonacci sequence to continue for? ");
+
+        int length = myScanner.nextInt();
+
+        myScanner.close();
+
         // instantiating array
 
-        long[] fibonacciArray = new long[51];
+        long[] fibonacciArray = new long[length + 1];
 
         fibonacciArray[0] = 1;
 
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < length; i++) {
 
             currentNumber = currentNumber + precedingNumber;
 
