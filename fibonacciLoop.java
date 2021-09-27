@@ -15,6 +15,8 @@ public class fibonacciLoop {
 
         long currentNumber = 1;
 
+        // ask user for input
+
         Scanner myScanner = new Scanner(System.in);
 
         System.out.println("How long do you want the fibonacci sequence to continue for? ");
